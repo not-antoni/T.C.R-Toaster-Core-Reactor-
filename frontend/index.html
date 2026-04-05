@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TCR - Toaster Core Reactor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🔥 Toaster Core Reactor 🔥</h1>
+
+  <canvas id="toasterCanvas" width="400" height="300"></canvas>
+
+  <div id="meters">
+    <p>Radiation: <span id="radiation">0</span>%</p>
+    <p>Cookness: <span id="cookness">0</span>%</p>
+    <p>Heat: <span id="heat">0</span>%</p>
+    <p>Pressure: <span id="pressure">0</span>%</p>
+  </div>
+
+  <div id="controls">
+    <button id="btnHeat">Heat Coils</button>
+    <button id="btnCoolant">Coolant Pump</button>
+    <button id="btnShield">Shield Toggle</button>
+    <button id="btnIgnition">Ignition</button>
+    <button id="btnReset">Reset</button>
+  </div>
+
+  <div id="shieldIndicator" style="display:none;">SHIELD</div>
+  <div id="errorBanner" style="display:none;">Network error talking to API</div>
+
+  <div id="restab" style="display:none;">
+    <h2>RESTABILIZATION MODE! 🍞💥</h2>
+    <p>Spam Heat Coils! Current: <span id="coilCounter">0</span>/5000%</p>
+    <p>Meme Check: <span id="memeCheck">Waiting for 21...</span></p>
+    <p>Time Remaining: <span id="restabTimer">--</span>s</p>
+  </div>
+
+  <p>Current Phase: <span id="phase">1</span></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
